@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=' bg-white p-10 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className=' bg-white pl-5 pr-2 pt-10 lg:px-40 dark:bg-gray-900'>
      <section className='min-h-screen '>
       <NavBar  DarkMode={DarkMode} setDarkMode={setDarkMode}/>
       <Body/>
