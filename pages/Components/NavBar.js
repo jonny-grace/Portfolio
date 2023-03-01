@@ -1,9 +1,10 @@
 import React from 'react'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
+import Logo from './Logo'
 export default function NavBar({DarkMode,setDarkMode}) {
   return (
     <nav className=' mb-12 flex justify-between  dark:text-white'>
-      <h1 className=' text-xl font-burtons'>developedByYohannes</h1>
+     <Logo />
       <ul className='flex md:items-center'>
         <li><BsFillMoonStarsFill onClick={()=>{setDarkMode(!DarkMode)}} className=' cursor-pointer text-2xl'/></li>
         <li>

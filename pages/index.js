@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar'
 import Portfolio from './Components/Portfolio'
 import Services from './Components/Services'
 import { useState } from 'react'
+import Footer from './Components/Footer'
 
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className=' bg-white pl-5 pr-2 pt-10 lg:px-40 dark:bg-gray-900'>
-     <section className='min-h-screen '>
+     <section className='min-h-screen'>
       <NavBar  DarkMode={DarkMode} setDarkMode={setDarkMode}/>
       <Body/>
       
@@ -26,6 +27,7 @@ export default function Home() {
      <section>
       <Services/>
       <Portfolio />
+      <Footer/>
      </section>
       </main>
 
