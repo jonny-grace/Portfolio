@@ -5,7 +5,7 @@ function SocialLink() {
     <div className=' text-5xl flex justify-center text-gray-600 gap-16 dark:text-white'>
       <a href='https://www.w3schools.com/tags/tag_a.asp'>  <AiFillTwitterCircle className=' cursor-pointer'/>
 </a>
-<a href='https://www.w3schools.com/tags/tag_a.asp'>  <AiFillLinkedin className=' cursor-pointer'/>
+<a href='https://www.linkedin.com/in/jonygrace/'>  <AiFillLinkedin className=' cursor-pointer'/>
 </a>
 <a href='https://www.w3schools.com/tags/tag_a.asp'>  <AiFillYoutube className=' cursor-pointer'/>
 </a>
