@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import web1 from "../../public/web1.png";
-import chatgpt from "../../public/chatgpt.png";
+import chatgptImg from "../../public/chatgpt.png";
 import country from "../../public/country.png";
 import calculator from "../../public/calculator.png";
 
