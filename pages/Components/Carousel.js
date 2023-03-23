@@ -5,6 +5,7 @@ import web2 from "../../public/web2.png";
 import web3 from "../../public/web3.png";
 import web4 from "../../public/web4.png";
 
+
 import { useState } from "react";
 
 function Carousel() {
@@ -20,9 +21,9 @@ setCurr(curr==slides.length-1?0:curr+1)
 }
   return (
     <div className="overflow-hidden relative ">
-      <div className="flex transition-transform ease-out py-10 h-1/4" style={{transform:`translateX(${-curr * 100}%)`}}>
+      <div className="flex transition-transform ease-out py-10 h-1/4 flex gap-5 " style={{transform:`translateX(${-curr * 100}%)`}}>
         {slides.map((slide) => (
-          <Image src={slide} width={"100%"} height={"50%"} key="slide" />
+          <Image src={slide} width={"100%"} height={"100%"} key={slide}/>
         ))}
       </div>
       <div className="absolute inset-0 px-5 flex items-center justify-between ">

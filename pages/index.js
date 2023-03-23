@@ -5,6 +5,8 @@ import Portfolio from './Components/Portfolio'
 import Services from './Components/Services'
 import { useState } from 'react'
 import Footer from './Components/Footer'
+import 'semantic-ui-css/semantic.min.css';
+
 
 
 export default function Home() {
