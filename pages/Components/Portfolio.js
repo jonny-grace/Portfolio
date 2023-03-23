@@ -33,7 +33,7 @@ function Portfolio() {
         </div>
         <div className="basis-1/3 flex-1">
           <Image
-            src={chatgpt}
+            src={web4}
             className="rounded-lg object-cover"
             width={"100%"}
             height={"100%"}
@@ -42,7 +42,7 @@ function Portfolio() {
         </div>
         <div className="basis-1/3 flex-1">
           <Image
-            src={country}
+            src={web3}
             className="rounded-lg object-cover"
             width={"100%"}
             height={"100%"}
@@ -51,7 +51,7 @@ function Portfolio() {
         </div>
         <div className="basis-1/3 flex-1">
           <Image
-            src={calculator}
+            src={web2}
             className="rounded-lg object-cover"
             width={"100%"}
             height={"100%"}
