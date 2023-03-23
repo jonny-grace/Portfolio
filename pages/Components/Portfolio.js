@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import web1 from "../../public/web1.png";
-import chatgptImg from "../../public/chatgpt.png";
-import country from "../../public/country.png";
-import calculator from "../../public/calculator.png";
+import web2 from "../../public/web2.png";
+import web3 from "../../public/web3.png";
+import web4 from "../../public/web4.png";
 
 
 import Carousel from "./Carousel";
