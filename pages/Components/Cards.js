@@ -42,7 +42,7 @@ function Cards() {
     "Express Js",
     "MongoDB",
     "PostgreSQL",
-    "Prizma",
+
     "Docker",
   ];
 
