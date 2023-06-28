@@ -8,7 +8,7 @@ import ServiceCard from "./ServiceCard";
 import LanguageList from "./LanguageList";
 
 function Cards() {
-  const ecommerceSollution = ["WooCommerce", "Shopify", "Magento"];
+  const Solution = ["WooCommerce", "Shopify", "Magento 2"];
   const frontendLanguages = [
     "HTML5",
     "CSS3",
@@ -50,7 +50,7 @@ function Cards() {
         title="Ecommerce Solution"
         description="As an ecommerce solution provider, I can help you set up and customize an ecommerce platform that meets your specific business needs. I can integrate payment gateways, shipping providers, and other essential features to ensure a seamless shopping experience for your customers."
       >
-        <LanguageList languages={ecommerceSollution} />
+        <LanguageList languages={Solution} />
       </ServiceCard>
     </div>
   );
