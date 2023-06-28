@@ -1,63 +1,57 @@
 import React from "react";
-import Image from "next/image";
-import design from "../../public/design.png";
+
+import frontend from "../../public/frontend.png";
+import ecommerce from "../../public/ecommerce.png";
 import code from "../../public/code.png";
-import consulting from "../../public/consulting.png";
+
+import ServiceCard from "./ServiceCard";
+import LanguageList from "./LanguageList";
 
 function Cards() {
+  const ecommerceSollution = ["WooCommerce", "Shopify", "Magento"];
+  const frontendLanguages = [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React Js",
+    "Next JS",
+    "TailwindCSS",
+    "Redux/ReduxToolkit",
+  ];
+  const backendLanguages = [
+    "Node Js",
+    "Nest Js",
+    "Express Js",
+    "MongoDB",
+    "PostgreSQL",
+    "Prizma",
+    "Docker",
+  ];
+
   return (
-    <div className=" lg:flex gap-10 md:flex dark:text-sky-100">
-      <div className="text-center shadow p-10 rounded-xl my-10">
-        <Image src={design} width={100} height={100} className="mx-auto" />
-        <h3 className=" text-lg font-medium pt-8 pb-2 dark:font-bold">
-          Beautiful Designs
-        </h3>
-        <p className="py-2">
-          Creating elegant designs suited for your needs following core design
-          theory.
-        </p>
-        <h4 className=" text-teal-600 py-4 dark:text-teal-400">
-          Design tools I use
-        </h4>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">Photoshop</p>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">Ilustrator</p>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">Figma</p>
-      </div>
+    <div className="lg:flex gap-10 md:flex dark:text-sky-100">
+      <ServiceCard
+        image={frontend}
+        title="Frontend Developer"
+        description="As a frontend developer, I specialize in creating visually stunning and user-friendly interfaces for websites and web applications. I use the latest frontend technologies and frameworks such as React, Angular, and Vue to build responsive and mobile-friendly websites that are optimized for search engines."
+      >
+        <LanguageList languages={frontendLanguages} />
+      </ServiceCard>
+      <ServiceCard
+        image={code}
+        title="Backend Development"
+        description="As a backend developer, I specialize in building robust and scalable server-side applications that power websites and web applications. I use the latest backend technologies and frameworks such as Node.js,Nest js and Express js to build APIs, databases, and other backend components."
+      >
+        <LanguageList languages={backendLanguages} />
+      </ServiceCard>
 
-      <div className="text-center shadow p-10 rounded-xl my-10">
-        <Image src={code} width={100} height={100} className="mx-auto" />
-        <h3 className=" text-lg font-medium pt-8 pb-2">Frontend Developer</h3>
-        <p className="py-2">
-          I like to code things from scratch, and enjoy bringing ideas to life
-          in the browser.
-        </p>
-        <h4 className=" text-teal-600 py-4 dark:text-teal-400">
-          Languages I use
-        </h4>
-        <p className=" p-2 text-gray-800 dark:text-sky-100 ">HTML</p>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">
-          CSS(SASS,TAILWINDCSS)
-        </p>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">
-          JavaScript(ES6+, JQuery, React, Redux Toolkit, Next.js, Webpack)
-        </p>
-
-      </div>
-
-      <div className="text-center shadow p-10 rounded-xl my-10">
-        <Image src={consulting} width={100} height={100} className="mx-auto" />
-        <h3 className=" text-lg font-medium pt-8 pb-2">Backend Development</h3>
-        <p className="py-2">
-        work on the hidden side of the development process. Developer and manage servers, databases, and security.
-        </p>
-        <h4 className=" text-teal-600 py-4 dark:text-teal-400">
-          Languages I use
-        </h4>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">NODE JS</p>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">EXPRESS JS</p>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">PHP</p>
-        <p className=" p-2 text-gray-800 dark:text-sky-100">MySql, PostgreSQL,MongoDB</p>
-      </div>
+      <ServiceCard
+        image={ecommerce}
+        title="Ecommerce Solution"
+        description="As an ecommerce solution provider, I can help you set up and customize an ecommerce platform that meets your specific business needs. I can integrate payment gateways, shipping providers, and other essential features to ensure a seamless shopping experience for your customers."
+      >
+        <LanguageList languages={ecommerceSollution} />
+      </ServiceCard>
     </div>
   );
 }
