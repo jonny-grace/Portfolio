@@ -6,7 +6,7 @@ import ServiceCard from "./ServiceCard";
 
 function LanguageList({ languages }) {
   console.log(languages);
-  // console.log(frontendLanguages);
+  console.log("frontendLanguages");
   return (
     <>
       <h4 className="text-teal-600 py-4 dark:text-teal-400">
