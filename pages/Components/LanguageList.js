@@ -30,7 +30,7 @@ function LanguageList({ languages }) {
             <span key={language}>
               <b>{language}</b>
               {index !== languages.length - 1 && (index + 1) % 5 !== 0 && ", "}
-              {(index + 1) % 5 === 0 && <br />}
+              {(index + 1) % 4 === 0 && <br />}
             </span>
           ))}
         </div>
